@@ -1,0 +1,8 @@
+// Site do Jogo
+
+O projeto está dentro da pasta catalogo.
+Abra-o pelo SpringBoot
+
+// Jogo
+
+O arquivo do jogo está nomeado como "1939DOGFIGHT.gfar"

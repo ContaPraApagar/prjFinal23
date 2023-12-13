@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Jogos</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><img src="img/home.png" alt="home"></a></li>
+        </ul>
+    </nav>
+    <div id="cadastro">
+        <h1>Cadastro de Jogos</h1>
+
+        <form id="cadastroForm" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Cadastro de Jogo</legend>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o nome" required><br>
+
+                    <label for="plataform">Plataforma:</label>
+                    <input type="text" id="plataform" name="plataform" placeholder="Digite a plataforma" required><br>
+
+                    <label for="genre">Genêro:</label>
+                    <input type="text" id="genre" name="genre" placeholder="Digite o genêro" required><br>
+
+                    <label for="description">Descrição:</label>
+                    <input type="text" id="description" name="description" placeholder="Digite a descrição"
+                        required><br>
+                </div>
+
+                <div>
+                    <label for="url">URL:</label>
+                    <input type="text" id="url" name="url" placeholder="Digite a URL" required><br>
+
+                    <label for="thumbnailpath">Thumbnail:</label>
+                    <input type="text" id="thumbnailpath" name="thumbnailpath" placeholder="Digite o link da imagem"
+                        required><br>
+
+                    <label for="squad">Squad:</label>
+                    <input type="text" id="squad" name="squad" placeholder="Digite o squad" required><br>
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="button" onclick="cadastrarJogo()" id="b1">✔Cadastrar</button>
+                <button type="button" onclick="excluirJogo()" id="b2">❌Excluir</button>
+            </div>
+        </form>
+        <div id="divimagem">
+            <fieldset>
+                <legend id="legendLista">Lista de jogos</legend>
+                <button type="button" onclick="ListarJogos()" id="b3">🔎Pesquisar</button>
+                <main>
+                    <table class="blueTable" id="jogos-tabela">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome do Jogo</th>
+                                <th>Genêro</th>
+                                <th>Descrição</th>
+                                <th>Plataforma</th>
+                                <th>URL</th>
+                                <th>Imagem</th>
+                                <th>Squad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- A tabela de funcionários será carregada aqui -->
+                        </tbody>
+                    </table>
+                </main>
+            </fieldset>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
