@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Scroller
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Scroller\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=viewWorld\ image
+comment1.target=Scroller(greenfoot.World,\ greenfoot.GreenfootImage)
+comment2.params=viewWorld\ image\ wide\ high
+comment2.target=Scroller(greenfoot.World,\ greenfoot.GreenfootImage,\ int,\ int)
+comment3.params=dsx\ dsy
+comment3.target=void\ scroll(int,\ int)
+comment4.params=
+comment4.target=int\ getScrolledX()
+comment5.params=
+comment5.target=int\ getScrolledY()
+numComments=6
